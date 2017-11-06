@@ -11,14 +11,25 @@ namespace Black_Jack
         string Name;
         List<string> MyCards;
         int MyPoint;
+        int MyMoney;
 
-        public Player(string name)
+        public int myMoney
         {
-            Name = name;
+            get
+            {
+                return MyMoney;
+            }
+        }
+
+        public Player(int money)
+        {
+            MyMoney = money;
             MyCards = new List<string>();
             MyPoint = 0;
         }
 
-
+        public void TakeCard() { }
+        public void VeiwMyCards() { }
+        public void VeiwMyPoint() { }
     }
 }

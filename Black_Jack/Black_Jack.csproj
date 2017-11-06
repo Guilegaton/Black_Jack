@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlackJack.cs" />
-    <Compile Include="IBlackJack.cs" />
-    <Compile Include="IPlayer.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Interfaces\ICard.cs" />
+    <Compile Include="Models\BlackJack.cs" />
+    <Compile Include="Interfaces\IBlackJack.cs" />
+    <Compile Include="Interfaces\IPlayer.cs" />
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

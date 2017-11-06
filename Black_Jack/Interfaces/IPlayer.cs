@@ -11,6 +11,5 @@ namespace Black_Jack
         void TakeCard();
         void VeiwMyCards();
         void VeiwMyPoint();
-        void SetName();
     }
 }

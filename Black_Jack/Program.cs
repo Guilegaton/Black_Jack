@@ -10,6 +10,8 @@ namespace Black_Jack
     {
         static void Main(string[] args)
         {
+            BlackJack thegame = new BlackJack();
+            thegame.StartGame();
         }
     }
 }
