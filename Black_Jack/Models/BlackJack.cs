@@ -29,8 +29,8 @@ namespace Black_Jack
         private List<Card> SetStartDeck()
         {
             //first time i will use "if"
-            string[] CardName = new string[] { "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "Bishop", "Queen", "King", "Tuz" };
-            string[] CardMast = new string[] { "chervi", "bubna", "trefa", "picka" };
+            string[] CardName = new string[] { "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "Jack", "Queen", "King", "Ace" };
+            string[] CardMast = new string[] { "hearts", "diamonds", "peak", "clubs" };
             List<Card> Deck = new List<Card>();
             for (int i = 2; i < CardName.Length + 2; i++)
             {

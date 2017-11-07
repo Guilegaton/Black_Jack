@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Black_Jack.Interfaces;
 
 namespace Black_Jack.Models
 {
-    class Card : ICard
+    class Card
     {
         string CardName;
         int CardValue;
@@ -32,14 +31,6 @@ namespace Black_Jack.Models
                 return CardValue;
             }
         }
-
-        public Card ChoseCard(List<Card> Deck)
-        {
-            return new Card("avc", 1);
-            
-        }
-
-        public void DeleteCardFromDeck(Card chosencard,ref List<Card> Deck) { }
 
     }
 }

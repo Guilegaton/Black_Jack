@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\ICard.cs" />
     <Compile Include="Models\BlackJack.cs" />
     <Compile Include="Interfaces\IBlackJack.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
