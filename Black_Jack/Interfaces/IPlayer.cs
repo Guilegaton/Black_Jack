@@ -9,7 +9,7 @@ namespace Black_Jack
 {
     interface IPlayer
     {
-        void TakeCard(List<Card> Deck);
+        void TakeCard(Deck Decka);
         void VeiwMyCards();
         void VeiwMyPoint();
     }

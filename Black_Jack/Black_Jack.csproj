@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Deck.cs" />
     <Compile Include="Models\BlackJack.cs" />
-    <Compile Include="Interfaces\IBlackJack.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Player.cs" />

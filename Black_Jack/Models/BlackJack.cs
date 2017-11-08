@@ -7,48 +7,31 @@ using System.Threading.Tasks;
 
 namespace Black_Jack
 {
-    class BlackJack : IBlackJack
+    class BlackJack
     {
+        Player diler;
+        Player plr;
+
         public BlackJack() { }
 
         public void StartGame()
         {
-            List<Card> Deck = SetStartDeck();
+            Console.WriteLine("Welcom to our Game! Please enter your name");
+            diler = new Player("Diler", 2000);
+            plr = new Player(Console.ReadLine(), 2000);
+            Console.Clear();
+
         }
 
-        private void VeiwAllPoint(Player ChosenPlayer)
+
+        private void Round()
         {
 
         }
 
-        public void SetWinner(Player ChosenPlayer)
+        private void SetWinner(Player ChosenPlayer)
         {
 
-        }
-
-        private List<Card> SetStartDeck()
-        {
-            //first time i will use "if"
-            string[] CardName = new string[] { "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "Jack", "Queen", "King", "Ace" };
-            string[] CardMast = new string[] { "hearts", "diamonds", "peak", "clubs" };
-            List<Card> Deck = new List<Card>();
-            for (int i = 2; i < CardName.Length + 2; i++)
-            {
-                for (int j = 0; j < CardMast.Length; j++)
-                {
-                    if (i < 11)
-                        Deck.Add(new Card(CardName[i - 2] + " " + CardMast[j], i));
-                    else if(i>10 && i != 14)
-                        Deck.Add(new Card(CardName[i - 2] + " " + CardMast[j], 10));
-                    else if(i == 14)
-                        Deck.Add(new Card(CardName[i - 2] + " " + CardMast[j], 11));
-                }
-            }
-            foreach (Card item in Deck)
-            {
-                Console.WriteLine(item.cardName + " " + item.cardValue.ToString());
-            }
-            return Deck;
         }
     }
 }

@@ -22,21 +22,32 @@ namespace Black_Jack
             }
         }
 
-        public Player(int money)
+        public string name
         {
+            get
+            {
+                return Name;
+            }
+
+        }
+
+        public Player(string name, int money)
+        {
+            Name = name;
             MyMoney = money;
             MyCards = new List<Card>();
             MyPoint = 0;
         }
 
-        public void TakeCard(List<Card> Deck)
+        public void TakeCard (Deck Decka) => MyCards.Add(Decka.ChoseCard());
+        
+        public void VeiwMyCards()
         {
-            Random pseudo_band = new Random();
-            int NumerOfChosenCard = pseudo_band.Next(Deck.Count);
-            MyCards.Add(Deck[NumerOfChosenCard]);
-            Deck.RemoveAt(NumerOfChosenCard);
+            foreach (Card item in MyCards)
+            {
+                Console.WriteLine(item.cardName);
+            }
         }
-        public void VeiwMyCards() { }
         public void VeiwMyPoint()
         {
             int point = 0;
