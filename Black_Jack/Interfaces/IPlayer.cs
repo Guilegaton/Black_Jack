@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Black_Jack.Models;
+﻿using Black_Jack.Models;
 
 namespace Black_Jack
 {
@@ -11,6 +6,9 @@ namespace Black_Jack
     {
         void TakeCard(Deck Decka);
         void VeiwMyCards();
-        void VeiwMyPoint();
+        void CalculateMyPoint();
+        void MinusMoney(double money);
+        void PlusMoney(double money);
+        void ClearMyHand();
     }
 }

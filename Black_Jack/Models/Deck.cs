@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Black_Jack.Models;
 
 namespace Black_Jack
@@ -25,7 +22,7 @@ namespace Black_Jack
             }
         }
 
-        public Card ChoseCard()
+        public Card ChoseCard() // use pseudo-band we take random card 
         {
             Random pseudo_band = new Random();
             int NumerOfChosenCard = pseudo_band.Next(decka.Count);
@@ -34,7 +31,7 @@ namespace Black_Jack
             return chosencard;
         }
 
-        public void Refresh()
+        public void Refresh() // "create" a new deck
         {
             Decka.Clear();
             string[] CardName = new string[] { "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "Jack", "Queen", "King", "Ace" };
